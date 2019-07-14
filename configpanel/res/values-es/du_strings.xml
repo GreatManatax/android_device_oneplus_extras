@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2013-2014 The CyanogenMod Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Panel de Configuración</string>
+
+    <!-- Gestures -->
+    <string name="screen_gestures_panel_title">Extras del dispositivo</string>
+    <string name="touchscreen_double_tap_gesture_title">Despertar dispositivo</string>
+    <string name="touchscreen_double_tap_gesture_summary">Doble toque para despertar el dispositivo</string>
+    <string name="touchscreen_camera_gesture_title">Cámara</string>
+    <string name="touchscreen_camera_gesture_summary">Dibuja un círculo para activar la cámara</string>
+    <string name="touchscreen_music_gesture_title">Música</string>
+    <string name="touchscreen_flashlight_gesture_title">Linterna</string>
+    <string name="touchscreen_flashlight_gesture_summary">Dibuja una \'V\' para activar la linterna</string>
+    <string name="touchscreen_music_gesture_summary">Usa gestos para controlar la reproducción \n
+    • Dos dedos verticalmente para reproducir / detener\n
+    • Dibuja una flecha izquierda (\'&#60;\') para volver a la pista anterior\n
+    • Dibuja una flecha derecha (\'&#62;\') para pasar a la pista siguiente</string>
+
+    <!-- Haptic feedback  -->
+    <string name="touchscreen_extras">Varios</string>
+    <string name="haptic_feedback">Respuesta háptica</string>
+    <string name="haptic_feedback_summary">Vibra cuando se detecta un gesto</string>
+
+    <!-- Alert slider settings -->
+    <string name="buttons_dashboard_summary">Configuración de alertas de notificación</string>
+    <string name="notification_slider_selection_dialog_title">Acción</string>
+    <string name="notification_slider_top_position">Posición superior</string>
+    <string name="notification_slider_middle_position">Posición intermedia</string>
+    <string name="notification_slider_bottom_position">Posición inferior</string>
+    <string name="notification_slider_mode_total_silence">Silencio total</string>
+    <string name="notification_slider_mode_alarms_only">Sólo alarmas</string>
+    <string name="notification_slider_mode_priority_only">Sólo prioritarias</string>
+    <string name="notification_slider_mode_none">Todas las notificaciones</string>
+    <string name="notification_slider_mode_vibrate">Vibrar</string>
+    <string name="notification_slider_mode_ring">Sonar</string>
+</resources>
