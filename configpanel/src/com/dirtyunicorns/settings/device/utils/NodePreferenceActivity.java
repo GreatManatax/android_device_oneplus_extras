@@ -39,8 +39,6 @@ public class NodePreferenceActivity extends PreferenceActivity
     @Override
     protected void onResume() {
         super.onResume();
-         // If running on a phone, remove padding around the listview
-         getListView().setPadding(0, 0, 0, 0);
     }
 
     @Override

@@ -52,10 +52,8 @@ public class TouchscreenGestureSettings extends NodePreferenceActivity {
     @Override
     protected void onResume() {
         super.onResume();
-
-        // If running on a phone, remove padding around the listview
-        getListView().setPadding(0, 0, 0, 0);
-
+        getListView().setDivider(null);
+        getListView().setDividerHeight(0);
         mHapticFeedback.setChecked(
                 Settings.System.getInt(getContentResolver(), KEY_HAPTIC_FEEDBACK, 1) != 0);
     }
