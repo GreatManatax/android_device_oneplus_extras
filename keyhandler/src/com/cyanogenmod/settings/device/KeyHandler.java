@@ -130,7 +130,7 @@ public class KeyHandler implements DeviceKeyHandler {
                 "GestureWakeLock");
 
         final Resources resources = mContext.getResources();
-        mProximityTimeOut = resources.getInteger(
+        /*mProximityTimeOut = resources.getInteger(
                 com.android.internal.R.integer.config_proximityCheckTimeout);
         mProximityWakeSupported = resources.getBoolean(
                 com.android.internal.R.bool.config_proximityCheckOnWake);
@@ -140,7 +140,7 @@ public class KeyHandler implements DeviceKeyHandler {
             mProximitySensor = mSensorManager.getDefaultSensor(Sensor.TYPE_PROXIMITY);
             mProximityWakeLock = mPowerManager.newWakeLock(PowerManager.PARTIAL_WAKE_LOCK,
                     "ProximityWakeLock");
-        }
+        }*/
 
         mVibrator = (Vibrator) context.getSystemService(Context.VIBRATOR_SERVICE);
         if (mVibrator == null || !mVibrator.hasVibrator()) {
@@ -281,16 +281,16 @@ public class KeyHandler implements DeviceKeyHandler {
             }
         } else if (!mEventHandler.hasMessages(GESTURE_REQUEST)) {
             Message msg = getMessageForKeyEvent(scanCode);
-            boolean defaultProximity = mContext.getResources().getBoolean(
+            /*boolean defaultProximity = mContext.getResources().getBoolean(
                 com.android.internal.R.bool.config_proximityCheckOnWakeEnabledByDefault);
             boolean proximityWakeCheckEnabled = Settings.System.getInt(mContext.getContentResolver(),
                     Settings.System.PROXIMITY_ON_WAKE, defaultProximity ? 1 : 0) == 1;
             if (mProximityWakeSupported && proximityWakeCheckEnabled && mProximitySensor != null) {
                 mEventHandler.sendMessageDelayed(msg, mProximityTimeOut);
                 processEvent(scanCode);
-            } else {
-                mEventHandler.sendMessage(msg);
-            }
+            } else {*/
+            mEventHandler.sendMessage(msg);
+            //}
         }
         return null;
     }
@@ -301,7 +301,7 @@ public class KeyHandler implements DeviceKeyHandler {
         return msg;
     }
 
-    private void processEvent(final int scancode) {
+    /*private void processEvent(final int scancode) {
         mProximityWakeLock.acquire();
         mSensorManager.registerListener(new SensorEventListener() {
             @Override
@@ -323,7 +323,7 @@ public class KeyHandler implements DeviceKeyHandler {
             public void onAccuracyChanged(Sensor sensor, int accuracy) {}
 
         }, mProximitySensor, SensorManager.SENSOR_DELAY_FASTEST);
-    }
+    }*/
 
     private void dispatchMediaKeyWithWakeLockToMediaSession(int keycode) {
         MediaSessionLegacyHelper helper = MediaSessionLegacyHelper.getHelper(mContext);
