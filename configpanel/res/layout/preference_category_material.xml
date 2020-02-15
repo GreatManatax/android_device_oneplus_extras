@@ -60,7 +60,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="2dip"
-            android:textAppearance="@android:style/TextAppearance.Material.Body2"
+            android:textAppearance="@style/TextAppearance.CategoryTitle"
             android:textColor="?android:attr/colorAccent"
             android:paddingTop="2dip" />
 
